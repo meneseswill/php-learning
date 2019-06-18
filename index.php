@@ -13,4 +13,4 @@ require 'core/bootstrap.php';
 // die(var_dump($app));
 
 require $router = Router::load('routes.php')
-        ->direct(Request::uri());
+        ->direct(Request::uri(), Request::method());
